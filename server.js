@@ -22,6 +22,7 @@ app.use(cors({
     credentials:true                   /* this will allow the sending of credentials from backend to frontend */
 }));
 
+
 //The express.static() function is a built-in middleware function in Express. It serves static files and is based on serve-static
 app.use("/uploads",express.static(path.join(__dirname,"uploads")));
 //so if someone uses /upload as their goto path so they will point at this
