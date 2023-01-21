@@ -1,5 +1,5 @@
 const express = require('express');
-const { createProduct, getProducts, getProduct, deleteProduct, updateProduct} = require('../controllers/productscontroller');
+const { createProduct, getProducts, getProduct, deleteProduct, updateProduct} = require('../controllers/productsController');
 const protect = require('../middleWare/authMiddleware');
 const { upload } = require('../utils/fileUpload');  //code for destination,storage setting of the images received
 const router=express.Router();
