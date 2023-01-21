@@ -18,8 +18,8 @@ app.use(express.json());  //converts the incoming body data to .json format
 app.use(cookieParser());
 app.use(express.urlencoded({extended:false})); //??
 app.use(cors({
-    origin:["http://localhost:3000", "https://streamlinemgmt.vercel.app"],   /* this will allow the cross origin to make request to this backend, the url we specify in origin are allowed to make req to backend */
-    credentials:true                   /* this will allow the sending of credentials from backend to frontend */
+    origin:["http://localhost:3000", "https://streamlinemgmtapp.vercel.app"], 
+    credentials:true                   
 }));
 
 
