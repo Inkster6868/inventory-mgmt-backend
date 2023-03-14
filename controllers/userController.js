@@ -62,6 +62,7 @@ res.cookie("token",token,{
 });
 
 
+
 if(user){
     const {_id, name, email, photo, phone, bio}=user //getting all the values of the user created 
     res.status(201).json({
