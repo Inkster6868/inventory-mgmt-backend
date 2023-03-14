@@ -18,14 +18,14 @@ app.use(express.json());  //converts the incoming body data to .json format
 app.use(cookieParser());
 app.use(express.urlencoded({extended:false})); //??
 app.use(cors({
-    origin:["http://localhost:3000", "https://streamlinemgmtapp.vercel.app"], 
+    origin:["http://localhost:3000", "https://streamlinemgmt.vercel.app"], 
     credentials:true                   
 }));
 
 
 //The express.static() function is a built-in middleware function in Express. It serves static files and is based on serve-static
 app.use("/uploads",express.static(path.join(__dirname,"uploads")));
-//so if someone uses /upload as their goto path so they will point at this
+//so if someone uses /uploads as their goto path so they will point at this
 
 //Routes Middlewares
     app.use('/api/users',userRouting); 
